@@ -4,7 +4,7 @@
 
 สำหรับรายวิชา [OOP](https://Wattanaroj2567.github.io)
 
-![download banner](./top.jpg)
+![download banner](./JustinBieber.jpg)
  
 วรรธนโรจน์ บุตรดี
 
