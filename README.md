@@ -24,10 +24,9 @@ for k,v in d.items():
 
 
 # diffusers
----
   pip install --upgrade diffusers[torch]
   pip install --upgrade transformers
----
+
 
 # การรัน
        1. python pygame/app01.py
