@@ -38,21 +38,21 @@ for k,v in d.items():
 #### 2. จะเด้งหน้าให้เลือกไฟล์ แนะนำให้เลือกไดร์ฟ D ดีกว่า หาไฟล์ง่ายดี ไม่มีไดร์ฟ เพราะต้องใช้พื้นที่เยอะอยู่ สร้าง Folder ที่ต้องการ แค่นี้ก็จะเสร็จในส่วนของ Git clone นะครับ
 #### 3. สร้างสภาพแวดล้อม (environment) 
  -- สร้างโฟลเดอร์สภาพแวดล้อมใหม่                                                                                                                                             
- **a.venv**
+   **a. venv**
    ```
    python -m venv myvenv
    ```
- **b.conda**
+  **b. conda**
   ```
    conda create --name myvenv 
   ```
 #### 4. เปิดใช้งานสภาพแวดล้อม (activate)
  -- การเปิดใช้งานโฟลเดอร์สภาพแวดล้อมที่เราได้สร้างขึ้นมา
- **a.venv**
+  **a. venv**
   ```
   venv/scripts/activate 
   ```
- **b.conda**
+  **b. conda**
   ```
   conda activate myvenv
   ```
@@ -78,7 +78,7 @@ for k,v in d.items():
  ```
    pip install streamlit 
  ```
-**b. conda install [package]** 
+ **b. conda install [package]** 
  ```
    conda install streamlit  
  ```
