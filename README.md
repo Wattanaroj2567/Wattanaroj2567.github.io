@@ -32,9 +32,10 @@ for k,v in d.items():
         Enter
          * คำอธิบายเพิ่มเติมในส่วนของ git clone (***ขั้นตอนเหล่านี้ถ้าเรามี Git แล้วข้ามไปข้อที่ 2 ได้เลย***)
          - "Git clone คือของ Git ในการจะเอาลิงค์มาทำสำเนาต้องเป็น  Github ทำเพื่อสร้างสำเนานำเข้ามาในเครื่อง โดยไม่ต้องทำใน github โดยตรงก็ได้"
-         - ไม่ขึ้น Git clone ให้ไปคัดลอกโค้ดในเว็บไซต์ >> scoop.sh << แล้วมาวางใน**PowerShell เท่านั้น|ห้าม Run as administartor เด็ดขาด เพราะเราจะเรียกผู้ดูแลระบบมาทำไมล่ะ เราแค่โหลดเฉยๆนิ**
+         - ไม่ขึ้น Git clone ให้ไปคัดลอกโค้ดในเว็บไซต์ >> scoop.sh << แล้วมาวางใน**PowerShell เท่านั้น|ห้าม Run as administartor เด็ดขาด เพราะเราจะเรียกผู้ดูแลระบบมาทำไมล่ะ เราแค่โหลดเฉยๆ**
            - > Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser 
            - > Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+             
          - รอแปป ขึ้นงี้มา แต่เครื่องจะไม่เหมือนกัน >> PS C:\Users\tawan> scoop insatall git <<||เยี่ยมครับ คุณทำถูกแล้ว โหลดเสร็จแล้วล้าา ปิดโปรแกรม
      2. จะเด้งหน้าให้เลือกไฟล์ แนะนำให้เลือกไดร์ฟ D ดีกว่า หาไฟล์ง่ายดี ไม่มีไดร์ฟ เพราะต้องใช้พื้นที่เยอะอยู่ สร้าง Folder ที่ต้องการ แค่นี้ก็จะเสร็จในส่วนของ Git clone นะครับ
  * สร้างสภาพแวดล้อม (environment) 
@@ -54,8 +55,8 @@ for k,v in d.items():
 
  ***ก่อนอื่oแนะนำเลยนะ สร้างของ venv ดีกว่า มันมาพร้อม Windows เลย แต่ะจะเป็นได้แค่เฉพาะ Python เท่านั้น แต่ภาษาโปรแกรมอื่นๆ venv ไม่ได้นะจ๊ะ***
 
-### streamlit
-#### install ติดตั้งเหมือนกัน
+## streamlit
+### install ติดตั้งเหมือนกัน
  a.venv install [package] (ใช้ได้ทุกเครื่องมือ (tool) หรือเฟรมเวิร์ก (framework))
  ```
    pip install streamlit 
@@ -65,7 +66,7 @@ for k,v in d.items():
    conda install streamlit  
  ```
   
-#### uninstall แตกต่างกัน
+### uninstall แตกต่างกัน
  a.venv uninstall [package] (ใช้ได้ทุกเครื่องมือ (tool) หรือเฟรมเวิร์ก (framework))
  ```
    pip uninstall streamlit 
@@ -75,7 +76,7 @@ for k,v in d.items():
    conda remove streamlit 
  ```
  
-#### update and upgrade  แตกต่างกัน
+### update and upgrade  แตกต่างกัน
  a.venv upgrade [package] (ใช้ได้ทุกเครื่องมือ (tool) หรือเฟรมเวิร์ก (framework))
  ```
    pip install --upgrade streamlit 
@@ -86,8 +87,8 @@ for k,v in d.items():
  ```
 
  
-### diffusers
- #### ได้ครบที่ต้องการ ไม่ต้อง install diffusers ตัวเดียวเพิ่ม นี่คือตัวติดตั้งแพ็คเกตเสริมเพิ่มเติม เผื่อติดตั้ง diffusers ตัวเดียว แล้วไม่มี
+## diffusers
+ ### ได้ครบที่ต้องการ ไม่ต้อง install diffusers ตัวเดียวเพิ่ม นี่คือตัวติดตั้งแพ็คเกตเสริมเพิ่มเติม เผื่อติดตั้ง diffusers ตัวเดียว แล้วไม่มี
  a.venv Upgrade[package] 
  ```
    pip install --upgrade diffusers[torch]
@@ -103,7 +104,7 @@ for k,v in d.items():
    conda install --upgrade transformers
  ```
 
-### การรัน Run
+## การรัน Run
 ```
    1. python pygame/app01.py
    2. python pyside6/app01.py
