@@ -28,75 +28,73 @@ for k,v in d.items():
 
 ### สิ่งที่เราควรทำ ***ก่อนเริ่ม Project (อธิบายโดยละเอียด!!) ก่อนอ่านดูดีๆนะครับเพื่อไม่ให้ต้องสับสน ทำได้แน่นอน 100% ผมลองทำมาหลายรอบแล้วได้ผลลัพธ์ที่ดี*** 
   * Open Program Vscode ขึ้นมาแล้ว  
-     1. กด Ctrl+Shift+P แล้วพิม Git clone แล้วนำลิงค์ไฟล์ Project ที่คุณสร้างไว้ของ Github มาวางในช่องค้นหา **ยกตัวอย่างเช่น https://github.com/wattanaroj2567/wattanaroj2567.github.io** 
-        Enter
-         * คำอธิบายเพิ่มเติมในส่วนของ git clone (***ขั้นตอนเหล่านี้ถ้าเรามี Git แล้วข้ามไปข้อที่ 2 ได้เลย***)
-         - "Git clone คือของ Git ในการจะเอาลิงค์มาทำสำเนาต้องเป็น  Github ทำเพื่อสร้างสำเนานำเข้ามาในเครื่อง โดยไม่ต้องทำใน github โดยตรงก็ได้"
-         - ไม่ขึ้น Git clone ให้ไปคัดลอกโค้ดในเว็บไซต์ >> scoop.sh << แล้วมาวางใน**PowerShell เท่านั้น|ห้าม Run as administartor เด็ดขาด เพราะเราจะเรียกผู้ดูแลระบบมาทำไมล่ะ เราแค่โหลดเฉยๆ**
-           - > Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser 
-           - > Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
-             
-         - รอแปป ขึ้นงี้มา แต่เครื่องจะไม่เหมือนกัน >> PS C:\Users\tawan> scoop insatall git <<||เยี่ยมครับ คุณทำถูกแล้ว โหลดเสร็จแล้วล้าา ปิดโปรแกรม
-     2. จะเด้งหน้าให้เลือกไฟล์ แนะนำให้เลือกไดร์ฟ D ดีกว่า หาไฟล์ง่ายดี ไม่มีไดร์ฟ เพราะต้องใช้พื้นที่เยอะอยู่ สร้าง Folder ที่ต้องการ แค่นี้ก็จะเสร็จในส่วนของ Git clone นะครับ
- * สร้างสภาพแวดล้อม (environment) 
-     3. สร้างโฟลเดอร์สภาพแวดล้อมใหม่ >> python -m venv myvenv << ของ venv || ถ้า >> conda create --name myvenv << ของ conda
+  * กด Ctrl+Shift+P แล้วพิม Git clone แล้วนำลิงค์ไฟล์ Project ที่คุณสร้างไว้ของ Github มาวางในช่องค้นหา **ยกตัวอย่างเช่น https://github.com/wattanaroj2567/wattanaroj2567.github.io** 
+    * คำอธิบายเพิ่มเติมในส่วนของ git clone (***ขั้นตอนเหล่านี้ถ้าเรามี Git แล้วข้ามไปข้อที่ 2 ได้เลย***)
+       - "Git clone คือของ Git ในการจะเอาลิงค์มาทำสำเนาต้องเป็น  Github ทำเพื่อสร้างสำเนานำเข้ามาในเครื่อง โดยไม่ต้องทำใน github โดยตรงก็ได้"
+       - ไม่ขึ้น Git clone ให้ไปคัดลอกโค้ดในเว็บไซต์ >> scoop.sh << แล้วมาวางใน **PowerShell เท่านั้น|ห้าม Run as administartor เด็ดขาด เพราะเราจะเรียกผู้ดูแลระบบมาทำไมล่ะ เราแค่โหลดเฉยๆ**
+         - > Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser 
+         - > Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression 
+       - รอแปป ขึ้นงี้มา แต่เครื่องจะไม่เหมือนกัน >> PS C:\Users\tawan> scoop insatall git << เยี่ยมครับ คุณทำถูกแล้ว โหลดเสร็จแล้วล้าา ปิดโปรแกรม
+  ** จะเด้งหน้าให้เลือกไฟล์ แนะนำให้เลือกไดร์ฟ D ดีกว่า หาไฟล์ง่ายดี ไม่มีไดร์ฟ เพราะต้องใช้พื้นที่เยอะอยู่ สร้าง Folder ที่ต้องการ แค่นี้ก็จะเสร็จในส่วนของ Git clone นะครับ
+     * สร้างสภาพแวดล้อม (environment) 
+  *** สร้างโฟลเดอร์สภาพแวดล้อมใหม่ >> python -m venv myvenv << ของ venv  ถ้า >> conda create --name myvenv << ของ conda
  * เปิดใช้งานสภาพแวดล้อม (activate)
-     4. การเปิดใช้งานโฟลเดอร์สภาพแวดล้อมที่เราได้สร้างขึ้นมา >> venv/scripts/activate << ของ venv(myvenv) || ถ้า >> conda activate myvenv << ของ conda(myvenv)
+  **** การเปิดใช้งานโฟลเดอร์สภาพแวดล้อมที่เราได้สร้างขึ้นมา >> venv/scripts/activate << ของ venv(myvenv)  ถ้า >> conda activate myvenv << ของ conda(myvenv)
  * ติดตั้งแพ็คเกต (install package)
-     5. ติดตั้งแพ็คเกตเข้าโฟลเดอร์สภาพแวดล้อม โดย >> pip install streamlit << ย้ำ!! ระบุตัวแพ็คเกตให้ชัดเจนและถูกต้อง
+ ***** ติดตั้งแพ็คเกตเข้าโฟลเดอร์สภาพแวดล้อม โดย >> pip install streamlit << ย้ำ!! ระบุตัวแพ็คเกตให้ชัดเจนและถูกต้อง
  * ในการรันเพื่อเข้าหน้าเว็บ เลื่อนดูด้านล่างและต้องใช้ไฟล์ Python ที่ใช้รันนะ ห้าม!! กดเครื่องหมาย > ด้านขวาบน เด็ดขาด รันเข้าเว็บไม่ได้
-     6. ทำตามครบแบบนี้ก็เสร็จเป็นที่เรียบร้อยแล้วครับ ใช้งานได้เรื่อยๆ
+****** ทำตามครบแบบนี้ก็เสร็จเป็นที่เรียบร้อยแล้วครับ ใช้งานได้เรื่อยๆ
 
-## Conda Error 
+### Conda Error 
  ปัญหาคือ คุณไม่ได้ติดตั้งยังไงล่ะ? ถ้าจำเป็นหรืออยากใช้เพื่อสร้างภาพแวลดล้อมทำได้ครับ อันนี้โครตเบิกกว้างอยู่ ใช้กับภาษาโปรแกรมอื่นๆได้  
  - Anaconda  >>> แพ็คเกตจะใหญ่กว่า miniconda หลายเท่ายังดีแถมโปรแกรม Python 3.11.5 มาด้วยกัน ไม่เสียเวลาโหลดแยก พร้อมโปรแกรมอื่นๆอย่าง Jupyter Vscode. เป็นโปรแกรมของ Anaconda สามารถเลือกติด 
    ตั้งได้เอง [Download >> ( https://www.anaconda.com/download )] 
  - Miniconda >>> แพ็คเกตจะไม่ใหญ่มาก ต่างจาก Anaconda เยอะ แถมโปรแกรม Python 3.12.2 ตัวเดียว [Download >> (https://docs.anaconda.com/free/miniconda/)]
 
- ***ก่อนอื่oแนะนำเลยนะ สร้างของ venv ดีกว่า มันมาพร้อม Windows เลย แต่ะจะเป็นได้แค่เฉพาะ Python เท่านั้น แต่ภาษาโปรแกรมอื่นๆ venv ไม่ได้นะจ๊ะ***
+ ***ก่อนอื่นแนะนำเลยนะ สร้างของ venv ดีกว่า มันมาพร้อม Windows เลย แต่ะจะเป็นได้แค่เฉพาะ Python เท่านั้น แต่ภาษาโปรแกรมอื่นๆ venv ไม่ได้นะจ๊ะ***
 
-## streamlit
-### install ติดตั้งเหมือนกัน
- a.venv install [package] (ใช้ได้ทุกเครื่องมือ (tool) หรือเฟรมเวิร์ก (framework))
+### streamlit
+#### install ติดตั้งเหมือนกัน
+ * a.venv install [package] (ใช้ได้ทุกเครื่องมือ (tool) หรือเฟรมเวิร์ก (framework))
  ```
    pip install streamlit 
  ```
- b.conda install [package] (ใช้ได้ทุกเครื่องมือ (tool) หรือเฟรมเวิร์ก (framework))
+* b.conda install [package] (ใช้ได้ทุกเครื่องมือ (tool) หรือเฟรมเวิร์ก (framework))
  ```
    conda install streamlit  
  ```
   
-### uninstall แตกต่างกัน
- a.venv uninstall [package] (ใช้ได้ทุกเครื่องมือ (tool) หรือเฟรมเวิร์ก (framework))
+#### uninstall แตกต่างกัน
+ * a.venv uninstall [package] (ใช้ได้ทุกเครื่องมือ (tool) หรือเฟรมเวิร์ก (framework))
  ```
    pip uninstall streamlit 
  ```
- b.conda uninstall [package] (ใช้ได้ทุกเครื่องมือ (tool) หรือเฟรมเวิร์ก (framework))
+ * b.conda uninstall [package] (ใช้ได้ทุกเครื่องมือ (tool) หรือเฟรมเวิร์ก (framework))
  ```
    conda remove streamlit 
  ```
  
-### update and upgrade  แตกต่างกัน
- a.venv upgrade [package] (ใช้ได้ทุกเครื่องมือ (tool) หรือเฟรมเวิร์ก (framework))
+#### update and upgrade  แตกต่างกัน
+ * a.venv upgrade [package] (ใช้ได้ทุกเครื่องมือ (tool) หรือเฟรมเวิร์ก (framework))
  ```
    pip install --upgrade streamlit 
  ```
- b.conda update [package] (ใช้ได้ทุกเครื่องมือ (tool) หรือเฟรมเวิร์ก (framework))
+ * b.conda update [package] (ใช้ได้ทุกเครื่องมือ (tool) หรือเฟรมเวิร์ก (framework))
  ```
    conda update streamlit 
  ```
 
  
-## diffusers
- ### ได้ครบที่ต้องการ ไม่ต้อง install diffusers ตัวเดียวเพิ่ม นี่คือตัวติดตั้งแพ็คเกตเสริมเพิ่มเติม เผื่อติดตั้ง diffusers ตัวเดียว แล้วไม่มี
- a.venv Upgrade[package] 
+### diffusers
+ #### ได้ครบที่ต้องการ ไม่ต้อง install diffusers ตัวเดียวเพิ่ม นี่คือตัวติดตั้งแพ็คเกตเสริมเพิ่มเติม เผื่อติดตั้ง diffusers ตัวเดียว แล้วไม่มี
+ * a.venv Upgrade[package] 
  ```
    pip install --upgrade diffusers[torch]
  ```
  ```
    pip install --upgrade transformers
  ```
- b.conda Upgrade[package]
+ * b.conda Upgrade[package]
  ```
    conda install --upgrade diffusers[torch]
  ```
