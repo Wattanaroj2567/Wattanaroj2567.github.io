@@ -48,6 +48,7 @@ for k,v in d.items():
   ```
 #### 4. เปิดใช้งานสภาพแวดล้อม (activate)
  -- การเปิดใช้งานโฟลเดอร์สภาพแวดล้อมที่เราได้สร้างขึ้นมา
+ 
   **a. venv**
   ```
   venv/scripts/activate 
@@ -98,7 +99,7 @@ for k,v in d.items():
  ```
    pip install --upgrade streamlit 
  ```
- **b. conda update [package]*** 
+ **b. conda update [package]**
  ```
    conda update streamlit 
  ```
