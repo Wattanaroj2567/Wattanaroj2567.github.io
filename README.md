@@ -4,11 +4,12 @@
 
 ## สำหรับรายวิชา [OOP](https://Wattanaroj2567.github.io)
 
-![download mp4](./Anime.mp4)
+![download mp4](./https://github.com/Wattanaroj2567/Wattanaroj2567.github.io/assets/159878664/14638b87-dd19-47da-8c22-19440e2a0f42
+)
  
 #### วรรธนโรจน์ บุตรดี
 
-### git config **(การกำนหดบันทึกไฟล์อัปโหลดจาก Vscode เข้าไปใน github)**
+### git config **(การกำหนดบันทึกไฟล์อัปโหลดจาก Vscode เข้าไปใน github)**
 *  user.name ซึ่งกำหนดชื่อผู้ใช้ Git และ user.email ซึ่งกำหนดอีเมลของผู้ใช้ Git
 ~~~
 git config --global user.name "wattanaroj2567"
