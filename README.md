@@ -4,9 +4,18 @@
 
 ## สำหรับรายวิชา [OOP](https://Wattanaroj2567.github.io)
 
-![download banner](./Scoopy-Doo.jpg)
+![download gif](./THIS-IS-8K60FPS-ANIME-_Marin_.gif)
  
 #### วรรธนโรจน์ บุตรดี
+
+### git config **(การกำนหดบันทึกไฟล์อัปโหลดจาก Vscode เข้าไปใน github)**
+*  user.name ซึ่งกำหนดชื่อผู้ใช้ Git และ user.email ซึ่งกำหนดอีเมลของผู้ใช้ Git
+~~~
+git config --global user.name "wattanaroj2567"
+git config --global user.email "wattanaroj.bu.66@ubu.ac.th"
+~~~
+*ดังนั้น คำสั่งที่ให้มาคือการกำหนดชื่อผู้ใช้ Git ของคุณเป็น "wattanaroj2567" และอีเมลของคุณเป็น "wattanaroj.bu.66@ubu.ac.th"
+ ซึ่งจะถูกใช้เมื่อคุณทำการ commit ใน Git repository ใดๆ ที่คุณติดตั้งไว้ในระบบของคุณ*
 
 ### code
 ~~~
