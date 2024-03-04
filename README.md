@@ -26,14 +26,14 @@ for k,v in d.items():
 
 #### - **Open Program Vscode ขึ้นมาแล้ว** 
 
-#### 0. กด Ctrl+Shift+P แล้วพิม Git clone แล้วนำลิงค์ไฟล์ Project ที่คุณสร้างไว้ของ Github มาวางในช่องค้นหา **ยกตัวอย่างเช่น https://github.com/wattanaroj2567/wattanaroj2567.github.io**
+#### 0. กด Ctrl+Shift+P แล้วพิม Git clone แล้วนำลิงค์ไฟล์ Project ที่คุณสร้างไว้ของ Github มาวางในช่องค้นหา  **ยกตัวอย่างเช่น https://github.com/wattanaroj2567/wattanaroj2567.github.io**
 #### 1. คำอธิบายเพิ่มเติมในส่วนของ git clone (***ขั้นตอนเหล่านี้ถ้าเรามี Git แล้วข้ามไปข้อที่ 2 ได้เลย***)  
   * Git clone คือของ Git ในการจะเอาลิงค์มาทำสำเนาต้องเป็น  Github ทำเพื่อสร้างสำเนานำเข้ามาในเครื่อง โดยไม่ต้องทำใน github โดยตรงก็ได้
   * ไม่ขึ้น Git clone ให้ไปคัดลอกโค้ดในเว็บไซต์ >> *scoop.sh* << แล้วมาวางใน *PowerShell เท่านั้น ห้าม Run as administartor เด็ดขาด เพราะเราจะเรียกผู้ดูแลระบบมาทำไมล่ะ เราแค่โหลดเฉยๆ* Enter เล๊ย
-     ```
+     ~~~
      - > Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
      - > Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
-     ```
+     ~~~
   * รอแปป ขึ้นงี้มา แต่เครื่องจะไม่เหมือนกัน >> *PS C:\Users\tawan> scoop insatall git* << เยี่ยมครับ คุณทำถูกแล้ว โหลดเสร็จแล้วล้าา ปิดโปรแกรม
   
 #### 2. จะเด้งหน้าให้เลือกไฟล์ แนะนำให้เลือกไดร์ฟ D ดีกว่า หาไฟล์ง่ายดี ไม่มีไดร์ฟ D เอา C แทนได้ เพราะต้องใช้พื้นที่เยอะอยู่ สร้าง Folder ที่ต้องการ แค่นี้ก็จะเสร็จในส่วนของ Git clone นะครับ
@@ -117,7 +117,7 @@ for k,v in d.items():
 
  
 ## Diffusers
-  ***ได้ครบที่ต้องการ ไม่ต้อง install diffusers ตัวเดียวเพิ่ม นี่คือตัวติดตั้งแพ็คเกตเสริมเพิ่มเติม เผื่อติดตั้ง diffusers ตัวเดียว แล้วไม่มี**
+  **ได้ครบที่ต้องการ ไม่ต้อง install diffusers ตัวเดียวเพิ่ม นี่คือตัวติดตั้งแพ็คเกตเสริมเพิ่มเติม เผื่อติดตั้ง diffusers ตัวเดียว แล้วไม่มี**
  
  **a. venv upgrade[package]** 
  ```
