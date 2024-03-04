@@ -23,19 +23,19 @@ for k,v in d.items():
 ~~~
 
 ****Q&A****
-****[ถาม] ทำไมต้องสร้างสภาพแวดล้อมด้วยล่ะ? ( ความคิดส่วนตัวผมที่ศึกษาคร่าวๆมา )****
-****[ตอบ] นั่นสิ แต่ว่าๆมันมีประโยชน์โครตๆเลยอ่ะ มีความารถก็คือ เก็บแพ็คเกตที่เราติดตั้งไว้ เข้าไปในโฟลเดอร์ของสภาพแวดล้อม แถมยังรักษาข้อมูลที่เราติดตั้งเอาไว้ใช้ได้ยาวๆด้วยแหละ****
+##### ****[ถาม] ทำไมต้องสร้างสภาพแวดล้อมด้วยล่ะ? ( ความคิดส่วนตัวผมที่ศึกษาคร่าวๆมา )****
+##### ****[ตอบ] นั่นสิ แต่ว่าๆมันมีประโยชน์โครตๆเลยอ่ะ มีความารถก็คือ เก็บแพ็คเกตที่เราติดตั้งไว้ เข้าไปในโฟลเดอร์ของสภาพแวดล้อม แถมยังรักษาข้อมูลที่เราติดตั้งเอาไว้ใช้ได้ยาวๆด้วยแหละ****
 
 ### ***สิ่งที่เราควรทำ ก่อนเริ่ม Project (อธิบายโดยละเอียด!!) ก่อนอ่านดูดีๆนะครับเพื่อไม่ให้ต้องสับสน ทำได้แน่นอน 100% ผมลองทำมาหลายรอบแล้วได้ผลลัพธ์ที่ดี*** 
-#### -Open Program Vscode ขึ้นมาแล้ว  
-#### -กด Ctrl+Shift+P แล้วพิม Git clone แล้วนำลิงค์ไฟล์ Project ที่คุณสร้างไว้ของ Github มาวางในช่องค้นหา **ยกตัวอย่างเช่น https://github.com/wattanaroj2567/wattanaroj2567.github.io**
+#### - Open Program Vscode ขึ้นมาแล้ว  
+#### 0. กด Ctrl+Shift+P แล้วพิม Git clone แล้วนำลิงค์ไฟล์ Project ที่คุณสร้างไว้ของ Github มาวางในช่องค้นหา **ยกตัวอย่างเช่น https://github.com/wattanaroj2567/wattanaroj2567.github.io**
 #### 1. คำอธิบายเพิ่มเติมในส่วนของ git clone (***ขั้นตอนเหล่านี้ถ้าเรามี Git แล้วข้ามไปข้อที่ 2 ได้เลย***)  
-   ###### - Git clone คือของ Git ในการจะเอาลิงค์มาทำสำเนาต้องเป็น  Github ทำเพื่อสร้างสำเนานำเข้ามาในเครื่อง โดยไม่ต้องทำใน github โดยตรงก็ได้
-   ###### - ไม่ขึ้น Git clone ให้ไปคัดลอกโค้ดในเว็บไซต์ >> scoop.sh << แล้วมาวางใน **PowerShell เท่านั้น ห้าม Run as administartor เด็ดขาด เพราะเราจะเรียกผู้ดูแลระบบมาทำไมล่ะ เราแค่โหลดเฉยๆ**
+   ##### - Git clone คือของ Git ในการจะเอาลิงค์มาทำสำเนาต้องเป็น  Github ทำเพื่อสร้างสำเนานำเข้ามาในเครื่อง โดยไม่ต้องทำใน github โดยตรงก็ได้
+   ##### - ไม่ขึ้น Git clone ให้ไปคัดลอกโค้ดในเว็บไซต์ >> scoop.sh << แล้วมาวางใน **PowerShell เท่านั้น ห้าม Run as administartor เด็ดขาด เพราะเราจะเรียกผู้ดูแลระบบมาทำไมล่ะ เราแค่โหลดเฉยๆ** Enter เล๊ย
      - > Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
      - > Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
    ##### - รอแปป ขึ้นงี้มา แต่เครื่องจะไม่เหมือนกัน >> PS C:\Users\tawan> scoop insatall git << เยี่ยมครับ คุณทำถูกแล้ว โหลดเสร็จแล้วล้าา ปิดโปรแกรม
-#### 2.จะเด้งหน้าให้เลือกไฟล์ แนะนำให้เลือกไดร์ฟ D ดีกว่า หาไฟล์ง่ายดี ไม่มีไดร์ฟ เพราะต้องใช้พื้นที่เยอะอยู่ สร้าง Folder ที่ต้องการ แค่นี้ก็จะเสร็จในส่วนของ Git clone นะครับ
+#### 2. จะเด้งหน้าให้เลือกไฟล์ แนะนำให้เลือกไดร์ฟ D ดีกว่า หาไฟล์ง่ายดี ไม่มีไดร์ฟ เพราะต้องใช้พื้นที่เยอะอยู่ สร้าง Folder ที่ต้องการ แค่นี้ก็จะเสร็จในส่วนของ Git clone นะครับ
 #### 3. สร้างสภาพแวดล้อม (environment) 
  -- สร้างโฟลเดอร์สภาพแวดล้อมใหม่ 
  **a.venv**
@@ -74,46 +74,46 @@ for k,v in d.items():
 
 ## streamlit
 ### install ติดตั้งเหมือนกัน
- **a.venv install [package]** 
+ **a. venv install [package]** 
  ```
    pip install streamlit 
  ```
-**b.conda install [package]** 
+**b. conda install [package]** 
  ```
    conda install streamlit  
  ```
   
 ### uninstall แตกต่างกัน
- **a.venv uninstall [package]**
+ **a. venv uninstall [package]**
  ```
    pip uninstall streamlit 
  ```
- **b.conda uninstall [package]**
+ **b. conda uninstall [package]**
  ```
    conda remove streamlit 
  ```
  
 ### update and upgrade  แตกต่างกัน
- **a.venv upgrade [package]** 
+ **a. venv upgrade [package]** 
  ```
    pip install --upgrade streamlit 
  ```
- **b.conda update [package]*** 
+ **b. conda update [package]*** 
  ```
    conda update streamlit 
  ```
 
  
 ## diffusers
- ### ได้ครบที่ต้องการ ไม่ต้อง install diffusers ตัวเดียวเพิ่ม นี่คือตัวติดตั้งแพ็คเกตเสริมเพิ่มเติม เผื่อติดตั้ง diffusers ตัวเดียว แล้วไม่มี
- **a.venv Upgrade[package]** 
+ #### ได้ครบที่ต้องการ ไม่ต้อง install diffusers ตัวเดียวเพิ่ม นี่คือตัวติดตั้งแพ็คเกตเสริมเพิ่มเติม เผื่อติดตั้ง diffusers ตัวเดียว แล้วไม่มี
+ **a. venv upgrade[package]** 
  ```
    pip install --upgrade diffusers[torch]
  ```
  ```
    pip install --upgrade transformers
  ```
-**b.conda Update[package]**
+**b. conda update[package]**
  ```
    conda update diffusers[torch]
  ```
