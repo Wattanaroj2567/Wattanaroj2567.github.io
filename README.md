@@ -147,7 +147,7 @@ for k,v in d.items():
    conda update transformers
  ```
 
-## การรัน Run
+## [!TIP]การรัน Run
 ```
    1. python pygame/app01.py
    2. python pyside6/app01.py
