@@ -30,14 +30,14 @@ for k,v in d.items():
 #### * Open Program Vscode ขึ้นมาแล้ว  
 #### * กด Ctrl+Shift+P แล้วพิม Git clone แล้วนำลิงค์ไฟล์ Project ที่คุณสร้างไว้ของ Github มาวางในช่องค้นหา **ยกตัวอย่างเช่น https://github.com/wattanaroj2567/wattanaroj2567.github.io**
 #### 1. คำอธิบายเพิ่มเติมในส่วนของ git clone (***ขั้นตอนเหล่านี้ถ้าเรามี Git แล้วข้ามไปข้อที่ 2 ได้เลย***)  
-   ##### - Git clone คือของ Git ในการจะเอาลิงค์มาทำสำเนาต้องเป็น  Github ทำเพื่อสร้างสำเนานำเข้ามาในเครื่อง โดยไม่ต้องทำใน github โดยตรงก็ได้
-   ##### - ไม่ขึ้น Git clone ให้ไปคัดลอกโค้ดในเว็บไซต์ >> scoop.sh << แล้วมาวางใน **PowerShell เท่านั้น ห้าม Run as administartor เด็ดขาด เพราะเราจะเรียกผู้ดูแลระบบมาทำไมล่ะ เราแค่โหลดเฉยๆ**
+   ###### - Git clone คือของ Git ในการจะเอาลิงค์มาทำสำเนาต้องเป็น  Github ทำเพื่อสร้างสำเนานำเข้ามาในเครื่อง โดยไม่ต้องทำใน github โดยตรงก็ได้
+   ###### - ไม่ขึ้น Git clone ให้ไปคัดลอกโค้ดในเว็บไซต์ >> scoop.sh << แล้วมาวางใน **PowerShell เท่านั้น ห้าม Run as administartor เด็ดขาด เพราะเราจะเรียกผู้ดูแลระบบมาทำไมล่ะ เราแค่โหลดเฉยๆ**
      - > Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
      - > Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
    ##### - รอแปป ขึ้นงี้มา แต่เครื่องจะไม่เหมือนกัน >> PS C:\Users\tawan> scoop insatall git << เยี่ยมครับ คุณทำถูกแล้ว โหลดเสร็จแล้วล้าา ปิดโปรแกรม
- #### 2.จะเด้งหน้าให้เลือกไฟล์ แนะนำให้เลือกไดร์ฟ D ดีกว่า หาไฟล์ง่ายดี ไม่มีไดร์ฟ เพราะต้องใช้พื้นที่เยอะอยู่ สร้าง Folder ที่ต้องการ แค่นี้ก็จะเสร็จในส่วนของ Git clone นะครับ
+#### 2.จะเด้งหน้าให้เลือกไฟล์ แนะนำให้เลือกไดร์ฟ D ดีกว่า หาไฟล์ง่ายดี ไม่มีไดร์ฟ เพราะต้องใช้พื้นที่เยอะอยู่ สร้าง Folder ที่ต้องการ แค่นี้ก็จะเสร็จในส่วนของ Git clone นะครับ
 #### 3. สร้างสภาพแวดล้อม (environment) 
- - สร้างโฟลเดอร์สภาพแวดล้อมใหม่ 
+ -- สร้างโฟลเดอร์สภาพแวดล้อมใหม่ 
  * a.venv
    ```
    python -m venv myvenv
@@ -47,7 +47,7 @@ for k,v in d.items():
    conda create --name myvenv << ของ conda
   ```
 #### 4. เปิดใช้งานสภาพแวดล้อม (activate)
- - การเปิดใช้งานโฟลเดอร์สภาพแวดล้อมที่เราได้สร้างขึ้นมา
+ -- การเปิดใช้งานโฟลเดอร์สภาพแวดล้อมที่เราได้สร้างขึ้นมา
  * a.venv
   ```
   venv/scripts/activate << ของ venv(myvenv)
@@ -57,12 +57,12 @@ for k,v in d.items():
   conda activate myvenv << ของ conda(myvenv)
   ```
 #### 5. ติดตั้งแพ็คเกต (install package)
- - ติดตั้งแพ็คเกตเข้าโฟลเดอร์สภาพแวดล้อม ย้ำ!! ระบุตัวแพ็คเกตให้ชัดเจนและถูกต้อง
+ -- ติดตั้งแพ็คเกตเข้าโฟลเดอร์สภาพแวดล้อม ย้ำ!! ระบุตัวแพ็คเกตให้ชัดเจนและถูกต้อง
   ```
   pip install streamlit
   ```
 #### 6. ในการรันเพื่อเข้าหน้าเว็บ เลื่อนดูด้านล่างและต้องใช้ไฟล์ Python ที่ใช้รันนะ ห้าม!! กดเครื่องหมาย > ด้านขวาบน เด็ดขาด รันเข้าเว็บไม่ได้
- - ทำตามครบแบบนี้ก็เสร็จเป็นที่เรียบร้อยแล้วครับ ใช้งานได้เรื่อยๆ
+ -- ทำตามครบแบบนี้ก็เสร็จเป็นที่เรียบร้อยแล้วครับ ใช้งานได้เรื่อยๆ
 
 ### Conda Error 
  ปัญหาคือ คุณไม่ได้ติดตั้งยังไงล่ะ? ถ้าจำเป็นหรืออยากใช้เพื่อสร้างภาพแวลดล้อมทำได้ครับ อันนี้โครตเบิกกว้างอยู่ ใช้กับภาษาโปรแกรมอื่นๆได้  
@@ -74,31 +74,31 @@ for k,v in d.items():
 
 ### streamlit
 #### install ติดตั้งเหมือนกัน
- * a.venv install [package] (ใช้ได้ทุกเครื่องมือ (tool) หรือเฟรมเวิร์ก (framework))
+ ** a.venv install [package] 
  ```
    pip install streamlit 
  ```
-* b.conda install [package] (ใช้ได้ทุกเครื่องมือ (tool) หรือเฟรมเวิร์ก (framework))
+** b.conda install [package] 
  ```
    conda install streamlit  
  ```
   
 #### uninstall แตกต่างกัน
- * a.venv uninstall [package] (ใช้ได้ทุกเครื่องมือ (tool) หรือเฟรมเวิร์ก (framework))
+ ** a.venv uninstall [package] 
  ```
    pip uninstall streamlit 
  ```
- * b.conda uninstall [package] (ใช้ได้ทุกเครื่องมือ (tool) หรือเฟรมเวิร์ก (framework))
+ ** b.conda uninstall [package]
  ```
    conda remove streamlit 
  ```
  
 #### update and upgrade  แตกต่างกัน
- * a.venv upgrade [package] (ใช้ได้ทุกเครื่องมือ (tool) หรือเฟรมเวิร์ก (framework))
+ ** a.venv upgrade [package] 
  ```
    pip install --upgrade streamlit 
  ```
- * b.conda update [package] (ใช้ได้ทุกเครื่องมือ (tool) หรือเฟรมเวิร์ก (framework))
+ ** b.conda update [package] 
  ```
    conda update streamlit 
  ```
@@ -106,14 +106,14 @@ for k,v in d.items():
  
 ### diffusers
  #### ได้ครบที่ต้องการ ไม่ต้อง install diffusers ตัวเดียวเพิ่ม นี่คือตัวติดตั้งแพ็คเกตเสริมเพิ่มเติม เผื่อติดตั้ง diffusers ตัวเดียว แล้วไม่มี
- * a.venv Upgrade[package] 
+ ** a.venv Upgrade[package] 
  ```
    pip install --upgrade diffusers[torch]
  ```
  ```
    pip install --upgrade transformers
  ```
- * b.conda Upgrade[package]
+** b.conda Upgrade[package]
  ```
    conda install --upgrade diffusers[torch]
  ```
