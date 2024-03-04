@@ -22,7 +22,7 @@ for k,v in d.items():
    print(k,v)
 ~~~
 
-
+****Q&A****
 ##### [ถาม] ทำไมต้องสร้างสภาพแวดล้อมด้วยล่ะ? ( ความคิดส่วนตัวผมที่ศึกษาคร่าวๆมา )
 ##### [ตอบ] นั่นสิ แต่ว่าๆมันมีประโยชน์โครตๆเลยอ่ะ มีความารถก็คือ เก็บแพ็คเกตที่เราติดตั้งไว้ เข้าไปในโฟลเดอร์ของสภาพแวดล้อม แถมยังรักษาข้อมูลที่เราติดตั้งเอาไว้ใช้ได้ยาวๆด้วยแหละ 
 
@@ -50,11 +50,11 @@ for k,v in d.items():
  -- การเปิดใช้งานโฟลเดอร์สภาพแวดล้อมที่เราได้สร้างขึ้นมา
  * a.venv
   ```
-  venv/scripts/activate << ของ venv(myvenv)
+  venv/scripts/activate 
   ```
 * b.conda
   ```
-  conda activate myvenv << ของ conda(myvenv)
+  conda activate myvenv
   ```
 #### 5. ติดตั้งแพ็คเกต (install package)
  -- ติดตั้งแพ็คเกตเข้าโฟลเดอร์สภาพแวดล้อม ย้ำ!! ระบุตัวแพ็คเกตให้ชัดเจนและถูกต้อง
@@ -72,23 +72,23 @@ for k,v in d.items():
 
  ***ก่อนอื่นแนะนำเลยนะ สร้างของ venv ดีกว่า มันมาพร้อม Windows เลย แต่ะจะเป็นได้แค่เฉพาะ Python เท่านั้น แต่ภาษาโปรแกรมอื่นๆ venv ไม่ได้นะจ๊ะ***
 
-### streamlit
+## streamlit
 #### install ติดตั้งเหมือนกัน
- ** a.venv install [package] 
+ **a.venv install [package]** 
  ```
    pip install streamlit 
  ```
-** b.conda install [package] 
+**b.conda install [package]** 
  ```
    conda install streamlit  
  ```
   
 #### uninstall แตกต่างกัน
- ** a.venv uninstall [package] 
+ **a.venv uninstall [package]**
  ```
    pip uninstall streamlit 
  ```
- ** b.conda uninstall [package]
+ **b.conda uninstall [package]**
  ```
    conda remove streamlit 
  ```
@@ -104,21 +104,21 @@ for k,v in d.items():
  ```
 
  
-### diffusers
+## diffusers
  #### ได้ครบที่ต้องการ ไม่ต้อง install diffusers ตัวเดียวเพิ่ม นี่คือตัวติดตั้งแพ็คเกตเสริมเพิ่มเติม เผื่อติดตั้ง diffusers ตัวเดียว แล้วไม่มี
- ** a.venv Upgrade[package] 
+ **a.venv Upgrade[package]** 
  ```
    pip install --upgrade diffusers[torch]
  ```
  ```
    pip install --upgrade transformers
  ```
-** b.conda Upgrade[package]
+**b.conda Update[package]**
  ```
-   conda install --upgrade diffusers[torch]
+   conda update diffusers[torch]
  ```
  ```
-   conda install --upgrade transformers
+   conda update transformers
  ```
 
 ## การรัน Run
