@@ -2,11 +2,11 @@
 
 # สมุดบันทึก
 
-สำหรับรายวิชา [OOP](https://Wattanaroj2567.github.io)
+## สำหรับรายวิชา [OOP](https://Wattanaroj2567.github.io)
 
 ![download banner](./Scoopy-Doo.jpg)
  
-วรรธนโรจน์ บุตรดี
+#### วรรธนโรจน์ บุตรดี
 
 ## code
 ~~~
@@ -24,12 +24,10 @@ for k,v in d.items():
 
 
 # diffusers
-
+---
   pip install --upgrade diffusers[torch]
   pip install --upgrade transformers
-
-วรรธนโรจน์ บุตรดี
-
+---
 
 # การรัน
        1. python pygame/app01.py
