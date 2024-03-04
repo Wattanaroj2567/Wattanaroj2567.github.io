@@ -24,8 +24,8 @@ for k,v in d.items():
 
 
 # diffusers
-  pip install --upgrade diffusers[torch]
-  pip install --upgrade transformers
+  - pip install --upgrade diffusers[torch]
+  - pip install --upgrade transformers
 
 
 # การรัน
