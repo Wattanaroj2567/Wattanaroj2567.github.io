@@ -1,12 +1,12 @@
 ![banner](https://picsum.photos/800/250)
 
-# สมุดบันทึก :atom: :dependabot:
+# สมุดบันทึก :spiral_notepad:
 
 ## สำหรับรายวิชา [OOP](https://Wattanaroj2567.github.io)
 
-![download.gif](./CatsLove.gif/800/250)
+![download.gif](./CatsLove.gif)
  
-#### วรรธนโรจน์ บุตรดี
+#### วรรธนโรจน์ บุตรดี :atom: :dependabot:
 
 ### git config **(การกำหนดบันทึกไฟล์อัปโหลดจาก Vscode เข้าไปใน github)**
 *  user.name ซึ่งกำหนดชื่อผู้ใช้ Git และ user.email ซึ่งกำหนดอีเมลของผู้ใช้ Git
