@@ -1,4 +1,4 @@
-![banner.git](https://i.pinimg.com/originals/19/c9/e3/19c9e3184c7783ab99fd11af529711c5.gif/800/250)
+![banner.git](https://i.pinimg.com/originals/19/c9/e3/19c9e3184c7783ab99fd11af529711c5.gif)
 
 # สมุดบันทึก :spiral_notepad:
 
