@@ -1,10 +1,10 @@
-![banner](https://picsum.photos/800/250)
+![banner](https://picsum.photos/seed/picsum/800/250)
 
 # สมุดบันทึก :atom: :dependabot:
 
 ## สำหรับรายวิชา [OOP](https://Wattanaroj2567.github.io)
 
-![download.gif](./CatsLoveToGiveKissesToo (10 Gifs).gif)
+![download.gif](./CatsLove.gif)
  
 #### วรรธนโรจน์ บุตรดี
 
