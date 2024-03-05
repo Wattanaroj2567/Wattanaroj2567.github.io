@@ -4,7 +4,7 @@
 
 ## สำหรับรายวิชา [OOP](https://Wattanaroj2567.github.io)
 
-![download.gif](./CatsLove.gif/700/200)
+![download.gif](./CatsLove.git)
  
 #### วรรธนโรจน์ บุตรดี
 
