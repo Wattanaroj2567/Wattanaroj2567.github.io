@@ -1,8 +1,8 @@
-![banner.git](https://i.pinimg.com/originals/19/c9/e3/19c9e3184c7783ab99fd11af529711c5/800/250.gif)
+![banner.git](https://i.pinimg.com/originals/19/c9/e3/19c9e3184c7783ab99fd11af529711c5.gif)
 
 # สมุดบันทึก :spiral_notepad:
 
-## สำหรับรายวิชา [OOP](https://Wattanaroj2567.github.io)
+## สำหรับรายวิชา [OOP](https://Wattanaroj2567.github.io) :computer:
 
 ![download.gif](./CatsLove.gif)
  
@@ -31,7 +31,7 @@ for k,v in d.items():
    print(k,v)
 ~~~
 
-### ***สิ่งที่เราควรทำ ก่อนเริ่ม Project (อธิบายโดยละเอียด!!) ก่อนอ่านดูดีๆนะครับเพื่อไม่ให้ต้องสับสน ทำได้แน่นอน 100% ผมลองทำมาหลายรอบแล้วได้ผลลัพธ์ที่ดี***
+### ***:pushpin: สิ่งที่เราควรทำ ก่อนเริ่ม Project (อธิบายโดยละเอียด!!) ก่อนอ่านดูดีๆนะครับเพื่อไม่ให้ต้องสับสน ทำได้แน่นอน 100% ผมลองทำมาหลายรอบแล้วได้ผลลัพธ์ที่ดี***
 
 #### - **Open Program Vscode ขึ้นมาแล้ว** 
 
