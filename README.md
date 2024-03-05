@@ -45,9 +45,9 @@ for k,v in d.items():
      - > Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
      ~~~
      
-  * รอแปป ขึ้นงี้มา แต่เครื่องจะไม่เหมือนกัน >> *PS C:\Users\tawan> scoop insatall git* << เยี่ยมครับ คุณทำถูกแล้ว โหลดเสร็จแล้วล้าา ปิดโปรแกรม
+  * รอแปป ขึ้นงี้มา แต่เครื่องละจะไม่เหมือนกัน >> *PS C:\Users\tawan> scoop insatall git* << เยี่ยมครับ คุณทำถูกแล้ว โหลดเสร็จแล้วล้าา ปิดโปรแกรม
   
-#### 2. จะเด้งหน้าให้เลือกไฟล์ แนะนำให้เลือกไดร์ฟ D ดีกว่า หาไฟล์ง่ายดี ไม่มีไดร์ฟ D เอา C แทนได้ เพราะต้องใช้พื้นที่เยอะอยู่ สร้าง Folder ที่ต้องการ แค่นี้ก็จะเสร็จในส่วนของ Git clone นะครับ
+#### 2. จะเด้งหน้า File Explorer ให้เลือกไฟล์ แนะนำให้เลือกไดร์ฟ D ดีกว่า หาไฟล์ง่ายดี ไม่มีไดร์ฟ D เอา C แทนได้ เพราะต้องใช้พื้นที่เยอะอยู่ สร้าง Folder ที่ต้องการ แค่นี้ก็จะเสร็จในส่วนของ Git clone นะครับ
 
 #### 3. สร้างสภาพแวดล้อม (environment) 
  -- สร้างโฟลเดอร์สภาพแวดล้อมใหม่
@@ -56,33 +56,33 @@ for k,v in d.items():
    ```
    python -m venv myvenv
    ```
-  **b. conda**
-  ```
+   **b. conda**
+   ```
    conda create --name myvenv 
-  ```
+   ```
 #### 4. เปิดใช้งานสภาพแวดล้อม (activate)
  -- การเปิดใช้งานโฟลเดอร์สภาพแวดล้อมที่เราได้สร้างขึ้นมา
  
-  **a. venv**
-  ```
-  venv/scripts/activate 
-  ```
-  **b. conda**
-  ```
-  conda activate myvenv
-  ```
+   **a. venv**
+   ```
+   venv/scripts/activate 
+   ```
+   **b. conda**
+   ```
+   conda activate myvenv
+   ```
 #### 5. ติดตั้งแพ็คเกต (install package)
  -- ติดตั้งแพ็คเกตเข้าโฟลเดอร์สภาพแวดล้อม ***ย้ำ!! ระบุตัวแพ็คเกตให้ชัดเจนและถูกต้อง***
-  ```
-  pip install streamlit
-  ```
+   ```
+   pip install streamlit
+   ```
 #### 6. ในการรันเพื่อเข้าหน้าเว็บ เลื่อนดูด้านล่างสุดและต้องใช้ไฟล์ Python ที่ใช้รันนะ ***ห้าม!! กดเครื่องหมาย > ด้านขวาบน เด็ดขาด รันเข้าเว็บไม่ได้***
  -- ทำตามครบแบบนี้ก็เสร็จเป็นที่เรียบร้อยแล้วครับ ใช้งานได้เรื่อยๆ
 
 ### Conda Error 
  ปัญหาคือ คุณไม่ได้ติดตั้งยังไงล่ะ? ถ้าจำเป็นหรืออยากใช้เพื่อสร้างภาพแวลดล้อมทำได้ครับ อันนี้โครตเบิกกว้างอยู่ ใช้กับภาษาโปรแกรมอื่นๆได้  
- - Anaconda  >>> แพ็คเกตจะใหญ่กว่า miniconda หลายเท่ายังดีแถมโปรแกรม Python 3.11.5 มาด้วยกัน ไม่เสียเวลาโหลดแยก พร้อมโปรแกรมอื่นๆอย่าง Jupyter Vscode. เป็นโปรแกรมของ Anaconda สามารถเลือกติดตั้งได้เอง Download >> ( https://www.anaconda.com/download )
- - Miniconda >>> แพ็คเกตจะไม่ใหญ่มาก ต่างจาก Anaconda เยอะ แถมโปรแกรม Python 3.12.2 ตัวเดียว Download >> ( https://docs.anaconda.com/free/miniconda/ )
+ - Anaconda  >>> แพ็คเกตจะใหญ่กว่า miniconda หลายเท่ายังดีแถมโปรแกรม Python 3.11.5 มาด้วยกัน ไม่เสียเวลาโหลดแยก พร้อมโปรแกรมอื่นๆอย่าง Jupyter Vscode. เป็นโปรแกรมของ Anaconda สามารถเลือกติดตั้งได้เอง Download >> (https://www.anaconda.com/download).
+ - Miniconda >>> แพ็คเกตจะไม่ใหญ่มาก ต่างจาก Anaconda เยอะ แถมโปรแกรม Python 3.12.2 ตัวเดียว Download >> (https://docs.anaconda.com/free/miniconda/).
 
 
 > [!NOTE]
@@ -141,7 +141,7 @@ for k,v in d.items():
  ```
    pip install --upgrade transformers
  ```
-**b. conda update[package]**
+ **b. conda update[package]**
  ```
    conda update diffusers[torch]
  ```
