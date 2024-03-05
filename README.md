@@ -1,4 +1,4 @@
-![gif](https://i.pinimg.com/originals/19/c9/e3/19c9e3184c7783ab99fd11af529711c5.gif)
+![gif](https://i.pinimg.com/originals/19/c9/e3/19c9e3184c7783ab99fd11af529711c5.gif)  ![ย้ำ!! เราต้องระบุคำนำหน้าชนิดไฟล์ที่คัดลอกมาให้ถูก]
 
 # สมุดบันทึก :spiral_notepad:
 
