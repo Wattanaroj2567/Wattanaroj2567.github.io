@@ -26,7 +26,7 @@ git add
 git commit
 ~~~
 ### คำสั่งพื้นฐาน python
-~~~roby
+~~~ruby
 python
 d = {'frame': 4.00, 'bancha': 2.00}
 for k,v in d.items():
