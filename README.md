@@ -1,10 +1,10 @@
 ![banner](https://picsum.photos/800/250)
 
-# สมุดบันทึก
+# สมุดบันทึก :dependabot:
 
 ## สำหรับรายวิชา [OOP](https://Wattanaroj2567.github.io)
 
-![download .gif](./- Find & Share on GIPHY.gif)
+![download.gif](./-GIPHY.gif)
  
 #### วรรธนโรจน์ บุตรดี
 
@@ -84,8 +84,9 @@ for k,v in d.items():
  - Anaconda  >>> แพ็คเกตจะใหญ่กว่า miniconda หลายเท่ายังดีแถมโปรแกรม Python 3.11.5 มาด้วยกัน ไม่เสียเวลาโหลดแยก พร้อมโปรแกรมอื่นๆอย่าง Jupyter Vscode. เป็นโปรแกรมของ Anaconda สามารถเลือกติดตั้งได้เอง Download >> ( https://www.anaconda.com/download )
  - Miniconda >>> แพ็คเกตจะไม่ใหญ่มาก ต่างจาก Anaconda เยอะ แถมโปรแกรม Python 3.12.2 ตัวเดียว Download >> ( https://docs.anaconda.com/free/miniconda/ )
 
+
 > [!NOTE]
-> ***ก่อนอื่นแนะนำเลยนะ สร้างของ venv ดีกว่า มันมาพร้อม Windows เลย แต่ะจะเป็นได้แค่เฉพาะ Python เท่านั้น แต่ภาษาโปรแกรมอื่นๆ venv ไม่ได้นะจ๊ะ***
+> ก่อนอื่นแนะนำเลยนะ สร้างของ venv ดีกว่า มันมาพร้อม Windows เลย แต่ะจะเป็นได้แค่เฉพาะ Python เท่านั้น แต่ภาษาโปรแกรมอื่นๆ venv ไม่ได้นะจ๊ะ
 
  
  __Q&A__
