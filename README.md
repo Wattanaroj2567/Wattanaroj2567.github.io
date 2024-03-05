@@ -1,6 +1,6 @@
 ![banner](https://picsum.photos/800/250)
 
-# สมุดบันทึก :dependabot:
+# สมุดบันทึก :atom: :dependabot:
 
 ## สำหรับรายวิชา [OOP](https://Wattanaroj2567.github.io)
 
