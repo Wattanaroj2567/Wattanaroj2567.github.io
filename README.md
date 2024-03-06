@@ -4,7 +4,7 @@
 
 # สมุดบันทึก :spiral_notepad:
 
-## **สำหรับรายวิชา > [OOP](https://Wattanaroj2567.github.io)** < :computer:
+## สำหรับรายวิชา > [OOP](https://Wattanaroj2567.github.io) < :computer:
 
 ![download.gif](./CatsLove.gif)
  
@@ -100,7 +100,7 @@ for k,v in d.items():
  **[ตอบ]** นั่นสิ แต่ว่าๆมันมีประโยชน์โครตๆเลยอ่ะ มีความสามารถก็คือ เก็บแพ็คเกตที่เราติดตั้งไว้ เข้าไปในโฟลเดอร์ของสภาพแวดล้อม แถมยังรักษาข้อมูลที่เราติดตั้งเอาไว้ใช้ได้ยาวๆด้วยแหละ
 
 
-## [Streamlit โค้ดคำสั่งที่รวบรวมมาของ Streamlit Cloud](https://cheat-sheet.streamlit.app/)
+## > [Streamlit คลิกที่ลิงก์นี้ได้เลยครับ](https://cheat-sheet.streamlit.app/) <  ***เป็นโค้ดคำสั่งที่รวบรวมมาของ Streamlit Cloud*** 
 ### install ติดตั้งเหมือนกัน
 
  **a. venv install [package]** 
