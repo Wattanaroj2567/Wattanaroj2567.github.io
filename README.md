@@ -85,8 +85,8 @@ for k,v in d.items():
 
 ### Conda Error 
  ปัญหาคือ คุณไม่ได้ติดตั้งยังไงล่ะ? ถ้าจำเป็นหรืออยากใช้เพื่อสร้างภาพแวลดล้อมทำได้ครับ อันนี้โครตเบิกกว้างอยู่ ใช้กับภาษาโปรแกรมอื่นๆได้  
- - Anaconda  >>> แพ็คเกตจะใหญ่กว่า miniconda หลายเท่ายังดีแถมโปรแกรม Python 3.11.5 มาด้วยกัน ไม่เสียเวลาโหลดแยก พร้อมโปรแกรมอื่นๆอย่าง Jupyter Vscode. เป็นโปรแกรมของ Anaconda สามารถเลือกติดตั้งได้เอง Download >> (https://www.anaconda.com/download)
- - Miniconda >>> แพ็คเกตจะไม่ใหญ่มาก ต่างจาก Anaconda เยอะ แถมโปรแกรม Python 3.12.2 ตัวเดียว Download >> (https://docs.anaconda.com/free/miniconda/)
+ - Anaconda  >>> แพ็คเกตจะใหญ่กว่า miniconda หลายเท่ายังดีแถมโปรแกรม Python 3.11.5 มาด้วยกัน ไม่เสียเวลาโหลดแยก พร้อมโปรแกรมอื่นๆอย่าง Jupyter Vscode. เป็นโปรแกรมของ Anaconda สามารถเลือกติดตั้งได้เอง [Anaconda](https://www.anaconda.com/download)
+ - Miniconda >>> แพ็คเกตจะไม่ใหญ่มาก ต่างจาก Anaconda เยอะ แถมโปรแกรม Python 3.12.2 ตัวเดียว  [Miniconda](https://docs.anaconda.com/free/miniconda/)
 
 
 > [!NOTE]
