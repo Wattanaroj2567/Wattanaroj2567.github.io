@@ -1,10 +1,12 @@
-# สมุดบันทึก :spiral_notepad:
+# สมุดบันทึก ฉบับเเสดงหน้าของ Github Page :spiral_notepad:
 
 ## สำหรับรายวิชา > [OOP](https://wattanaroj2567.github.io/) < :computer:
 
-![download.gif](./CatsLove.gif)
+![image](./CatsLove.gif)
  
 #### วรรธนโรจน์ บุตรดี :atom: :dependabot:
+
+
 
    > [!TIP]
    > 1. python diffusers/app01.py
