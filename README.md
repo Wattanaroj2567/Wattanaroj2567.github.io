@@ -3,8 +3,8 @@
 ## สำหรับรายวิชา > [OOP](https://wattanaroj2567.github.io/) < :computer:
 
 ![GIF](./CatsLove.gif)
- 
-#### วรรธนโรจน์ บุตรดี :atom: :dependabot:
+
+## ภาพตัวอย่าง
 
 ![Image](Webpage.jpg)
 
