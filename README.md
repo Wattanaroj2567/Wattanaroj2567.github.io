@@ -1,6 +1,6 @@
 # สมุดบันทึก :spiral_notepad:
 
-## สำหรับรายวิชา > [OOP](https://Wattanaroj2567.github.io) < :computer:
+## สำหรับรายวิชา > [OOP](https://wattanaroj2567.github.io/) < :computer:
 
 ![download.gif](./CatsLove.gif)
  
