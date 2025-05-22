@@ -2,11 +2,11 @@
 
 ## สำหรับรายวิชา > [OOP](https://wattanaroj2567.github.io/) < :computer:
 
-![image](./CatsLove.gif)
+![GIF](./CatsLove.gif)
  
 #### วรรธนโรจน์ บุตรดี :atom: :dependabot:
 
-
+![Image](Webpage.jpg)
 
    > [!TIP]
    > 1. python diffusers/app01.py
