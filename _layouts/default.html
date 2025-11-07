@@ -1,118 +1,141 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="{{ site.lang | default: 'th' }}">
 
 <head>
-    <meta charset="utf-8">
-    <title>{{ page.title | default: site.title }}</title>
-    <meta name="description" content="{{ site.description }}">
+    <meta charset="UTF-8">
+    {% seo %}
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style"
+        type="text/css" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    <!-- ใช้ GitHub Avatar เป็น favicon -->
+    <!-- favicon ใช้ GitHub Avatar -->
     <link rel="icon" href="https://avatars.githubusercontent.com/u/159878664?v=4" type="image/png">
 
-    <!-- CSS หลักของธีม Cayman -->
+    <!-- CSS หลักของธีม -->
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 
-    <!-- CSS เพิ่มเติมของเราเอง ให้ดูอ่านง่ายขึ้น -->
+    {% include head-custom.html %}
+
+    <!-- CSS เพิ่มเติมให้อ่านง่ายขึ้น -->
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
-            line-height: 1.8;
+            font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.75;
         }
 
         .page-header {
             padding: 40px 20px;
+            background: linear-gradient(135deg, #0f766e, #0ea5e9);
         }
 
         .project-name {
             font-size: 2.4rem;
-            margin-bottom: 0.4rem;
+            margin-bottom: 0.2em;
         }
 
         .project-tagline {
             font-size: 1.1rem;
-            opacity: 0.9;
+            opacity: 0.95;
+            color: #f0fdfa;
         }
 
         .main-content {
             max-width: 900px;
-            margin: 0 auto 40px;
-            padding: 24px 28px;
-            background: #0f172a;
-            /* พื้นหลังกล่องเนื้อหา */
-            border-radius: 12px;
-            box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
+            margin: 40px auto;
+            padding: 30px 36px;
+            background: #f9fafb;
+            border-radius: 14px;
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
         }
 
         .main-content h1,
         .main-content h2,
         .main-content h3 {
-            color: #f9fafb;
+            color: #111827;
             margin-top: 1.4em;
-            margin-bottom: 0.5em;
+            margin-bottom: 0.6em;
         }
 
         .main-content p,
         .main-content li {
             font-size: 16px;
-            color: #e5e7eb;
+            color: #374151;
         }
 
-        .main-content hr {
-            border: 0;
-            border-top: 1px solid #1f2937;
-            margin: 24px 0;
-        }
-
-        .main-content a {
-            color: #38bdf8;
-            text-decoration: none;
-        }
-
-        .main-content a:hover {
-            text-decoration: underline;
-        }
-
-        /* ตารางแผนการสอนให้อ่านง่ายขึ้น */
-        .main-content table {
+        table {
             width: 100%;
             border-collapse: collapse;
-            margin: 16px 0 24px;
+            margin: 1.2em 0;
             font-size: 14px;
         }
 
-        .main-content th,
-        .main-content td {
-            border: 1px solid #1f2937;
+        th,
+        td {
+            border: 1px solid #d1d5db;
             padding: 8px 10px;
-            vertical-align: top;
+            text-align: left;
         }
 
-        .main-content thead th {
-            background: #111827;
-            color: #e5e7eb;
+        thead th {
+            background: #e0f2fe;
         }
 
-        .main-content tbody tr:nth-child(even) {
-            background: #020617;
+        tbody tr:nth-child(even) {
+            background: #f9fafb;
         }
 
-        .main-content tbody tr:nth-child(odd) {
-            background: #02061740;
+        .site-footer {
+            margin-top: 40px;
+            font-size: 14px;
+            text-align: center;
+            color: #6b7280;
+        }
+
+        .site-footer a {
+            color: #0ea5e9;
+            text-decoration: none;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 
 <body>
-    <section class="page-header">
-        <h1 class="project-name">{{ site.title }}</h1>
-        <h2 class="project-tagline">{{ site.description }}</h2>
-        <a href="https://github.com/Wattanaroj2567" class="btn">View on GitHub</a>
-    </section>
+    <a id="skip-to-content" href="#content">Skip to content</a>
 
-    <section class="main-content">
+    <header class="page-header" role="banner">
+        <h1 class="project-name">{{ page.title | default: site.title }}</h1>
+        <h2 class="project-tagline">{{ page.description | default: site.description }}</h2>
+
+        {% if site.github.is_project_page %}
+        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
+        {% endif %}
+        {% if site.show_downloads %}
+        <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
+        <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
+        {% endif %}
+    </header>
+
+    <main id="content" class="main-content" role="main">
         {{ content }}
-    </section>
+        <footer class="site-footer">
+            {% if site.github.is_project_page %}
+            <span class="site-footer-owner">
+                <a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a>
+                is maintained by
+                <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.
+            </span><br>
+            {% endif %}
+            <span class="site-footer-credits">
+                This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+            </span>
+        </footer>
+    </main>
 </body>
 
 </html>
