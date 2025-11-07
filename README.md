@@ -1,9 +1,4 @@
----
-layout: default
-title: Wattanaroj Butdee
----
-
-# Wattanaroj Butdee
+## Wattanaroj Butdee
 
 **ชื่อ-นามสกุล:** วรรธนโรจน์ บุตดี  
 **รหัสนักศึกษา:** 66114540621  
