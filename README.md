@@ -1,8 +1,11 @@
 **ชื่อ-นามสกุล:** วรรธนโรจน์ บุตดี  
 **รหัสนักศึกษา:** 66114540621  
+**คณะ:** วิทยาศาสตร์ (Faculty of Science)  
+**มหาวิทยาลัย:** มหาวิทยาลัยอุบลราชธานี (Ubon Ratchathani University)  
 **สาขา:** วิทยาการข้อมูลและนวัตกรรมซอฟต์แวร์ (Data Science and Software Innovation)  
 **ชั้นปี:** 3  
 **อีเมล:** [wattanaroj.bu.66@ubu.ac.th](mailto:wattanaroj.bu.66@ubu.ac.th)
+
 
 ---
 
